@@ -1,0 +1,15 @@
+# DÃY SỐ NHỊ PHÂN
+import math
+
+
+
+if __name__ == '__main__':
+    n = int(input())
+    a = [int(i) for i in input().split()]
+    cnt = 0
+    for i in range(1, n):
+        if a[i] != a[i - 1]:
+            cnt += 1
+    print(cnt)
+
+
